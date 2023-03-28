@@ -32,55 +32,52 @@ namespace Topic_5._5
 
         public void DrawRoll()
         {
-            if (_roll == 1)
+            switch (_roll)
             {
-                Console.WriteLine("-----");
-                Console.WriteLine("|    |");
-                Console.WriteLine("|  o |");
-                Console.WriteLine("|    |");
-                Console.WriteLine("-----");
+                case 1:
+                    Console.WriteLine("------");
+                    Console.WriteLine("|    |");
+                    Console.WriteLine("|  o |");
+                    Console.WriteLine("|    |");
+                    Console.WriteLine("------");
+                    break;
+                case 2:
+                    Console.WriteLine("------");
+                    Console.WriteLine("|o   |");
+                    Console.WriteLine("|    |");
+                    Console.WriteLine("|   o|");
+                    Console.WriteLine("------");
+                    break;
+                case 3:
+                    Console.WriteLine("------");
+                    Console.WriteLine("| o  |");
+                    Console.WriteLine("|  o |");
+                    Console.WriteLine("|   o|");
+                    Console.WriteLine("------");
+                    break;
+                case 4:
+                    Console.WriteLine("------");
+                    Console.WriteLine("|o  o|");
+                    Console.WriteLine("|    |");
+                    Console.WriteLine("|o  o|");
+                    Console.WriteLine("------");
+                    break;
+                case 5:
+                    Console.WriteLine("------");
+                    Console.WriteLine("|o  o|");
+                    Console.WriteLine("|  o |");
+                    Console.WriteLine("|o  o|");
+                    Console.WriteLine("------");
+                    break;
+                case 6:
+                    Console.WriteLine("------");
+                    Console.WriteLine("|o  o|");
+                    Console.WriteLine("|o  o|");
+                    Console.WriteLine("|o  o|");
+                    Console.WriteLine("------");
+                    break;
             }
-            if (_roll == 2)
-            {
-                Console.WriteLine("-----");
-                Console.WriteLine("|o   |");
-                Console.WriteLine("|    |");
-                Console.WriteLine("|  o |");
-                Console.WriteLine("-----");
-            }
-            if (_roll == 3)
-            {
-                Console.WriteLine("-----");
-                Console.WriteLine("|o   |");
-                Console.WriteLine("| o  |");
-                Console.WriteLine("|  o |");
-                Console.WriteLine("-----");
-            }
-            if (_roll == 4)
-            {
-                Console.WriteLine("-----");
-                Console.WriteLine("|o o |");
-                Console.WriteLine("|    |");
-                Console.WriteLine("|o o |");
-                Console.WriteLine("-----");
-            }
-            if (_roll == 5)
-            {
-                Console.WriteLine("-----");
-                Console.WriteLine("|o o |");
-                Console.WriteLine("| o  |");
-                Console.WriteLine("|o o |");
-                Console.WriteLine("-----");
-            }
-            else 
-            {
-                Console.WriteLine("-----");
-                Console.WriteLine("|o o |");
-                Console.WriteLine("| o  |");
-                Console.WriteLine("|o o |");
-                Console.WriteLine("-----");
-            }
-           
+
         }
 
     }
